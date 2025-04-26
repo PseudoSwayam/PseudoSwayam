@@ -38,7 +38,7 @@
 ```python
 class AboutMe:
     def __init__(self):
-        self.name = "[Swayam]"
+        self.name = ["Swayam"]
         self.learning = ["AI", "Deep Learning", "IoT", "Fullstack Development"]
         self.current_project = "TARA-Vision - AI-Powered Women Safety Surveillance"
         self.interests = ["Building smart devices", "Real-time AI", "Problem Solving"]
