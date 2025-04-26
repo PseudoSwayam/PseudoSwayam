@@ -42,7 +42,7 @@ class AboutMe:
         self.learning = ["AI", "Deep Learning", "IoT", "Fullstack Development"]
         self.current_project = "TARA-Vision - AI-Powered Women Safety Surveillance"
         self.interests = ["Building smart devices", "Real-time AI", "Problem Solving"]
-        self.hobbies = ["Badminton", "Gym", "Creating innovative projects"]
+        self.hobbies = ["Badminton", "Event Management", "Creating innovative projects"]
         self.goal = "Always be a lifelong learner and build meaningful tech ✨"
 
     def say_hi(self):
