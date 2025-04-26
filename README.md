@@ -55,7 +55,7 @@ me.say_hi()
 
 ## ✨ Projects That Make Me Proud
 
-### 🚀 [TARA-VISION](https://github.com/your-github-username/TARA-VISION)
+### 🚀 [TARA-VISION]
 > **TARA-VISION** is my proud exploration into Smart Vision Systems using Deep Learning & Computer Vision!
 
 - 💡 Real-Time Women Safety 
