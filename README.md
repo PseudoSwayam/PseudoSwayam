@@ -7,7 +7,7 @@
   <a href="https://www.linkedin.com/in/swayamsahoo11/" target="_blank">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" />
   </a>
-  <a href="./resume-swayam.pdf]" target="_blank">
+  <a href="./resume-swayam.pdf" target="_blank">
     <img alt="Resume" src="https://img.shields.io/badge/Resume-View-green?style=for-the-badge&logo=google-drive" />
   </a>
   <a href="mailto:swayampr.sahoo@gmail.com" target="_blank">
