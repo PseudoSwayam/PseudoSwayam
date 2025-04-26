@@ -53,6 +53,15 @@ me.say_hi()
 ```
 ---
 
+<div align="center">
+  <h3>🎮 Feeling Playful? Play My Snake Game! 🐍</h3>
+  <a href="https://psuedoswayam.github.io/snake-game" target="_blank">
+    <img src="https://img.shields.io/badge/Play%20Snake%20Game-Click%20Here-black?style=for-the-badge&logo=github&logoColor=green" alt="Play Snake Game" />
+  </a>
+</div>
+
+---
+
 ## ✨ Projects That Make Me Proud
 
 ### 🚀 TARA-VISION:
