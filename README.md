@@ -68,13 +68,13 @@ me.say_hi()
       <td align="center" width="400">
         <h3>Play My Dino Game! 🦖</h3>
         <a href="https://replit.com/@SwayamSahoo/dinogame" target="_blank">
-          <img src="https://img.shields.io/badge/Play%20Dino%20Game-Click%20Here-black?style=for-the-badge&logo=github&logoColor=green" width="250" height="70"/>
+          <img src="https://img.shields.io/badge/Play%20Dino%20Game-Click%20Here-black?style=for-the-badge&logo=github&logoColor=green" alt="Play Snake Game" width="250" height="70"/>
         </a>
       </td>
       <td align="center" width="400">
         <h3>Play My Snake Game! 🐍</h3>
         <a href="https://PseudoSwayam.github.io/snake-game" target="_blank">
-          <img src="https://img.shields.io/badge/Play%20Snake%20Game-Click%20Here-black?style=for-the-badge&logo=github&logoColor=green" width="250" height="70"/>
+          <img src="https://img.shields.io/badge/Play%20Snake%20Game-Click%20Here-black?style=for-the-badge&logo=github&logoColor=green" alt="Play Snake Game" width="250" height="70"/>
         </a>
       </td>
     </tr>
