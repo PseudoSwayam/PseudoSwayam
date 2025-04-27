@@ -66,31 +66,15 @@ me.say_hi()
   <table>
     <tr>
       <td align="center" width="400">
-        <h2>Play My Dino Game! 🦖</h2>
+        <h3>Play My Dino Game! 🦖</h3>
         <a href="https://replit.com/@SwayamSahoo/dinogame" target="_blank">
-          <img 
-            src="https://img.shields.io/badge/Play%20Dino%20Game-Click%20Here-black?style=for-the-badge&logo=github&logoColor=green" 
-            alt="Play Dino Game" 
-            width="250" 
-            height="70"
-            style="border-radius: 12px; transition: all 0.3s ease-in-out; box-shadow: 0 0 10px #00ff00;"
-            onmouseover="this.style.boxShadow='0 0 30px #00ff00, 0 0 60px #00ff00'; this.style.transform='scale(1.1)';"
-            onmouseout="this.style.boxShadow='0 0 10px #00ff00'; this.style.transform='scale(1)';"
-          />
+          <img src="https://img.shields.io/badge/Play%20Dino%20Game-Click%20Here-black?style=for-the-badge&logo=github&logoColor=green" width="250" height="70"/>
         </a>
       </td>
       <td align="center" width="400">
-        <h2>Play My Snake Game! 🐍</h2>
+        <h3>Play My Snake Game! 🐍</h3>
         <a href="https://PseudoSwayam.github.io/snake-game" target="_blank">
-          <img 
-            src="https://img.shields.io/badge/Play%20Snake%20Game-Click%20Here-black?style=for-the-badge&logo=github&logoColor=green" 
-            alt="Play Snake Game" 
-            width="250" 
-            height="70"
-            style="border-radius: 12px; transition: all 0.3s ease-in-out; box-shadow: 0 0 10px #00ff00;"
-            onmouseover="this.style.boxShadow='0 0 30px #00ff00, 0 0 60px #00ff00'; this.style.transform='scale(1.1)';"
-            onmouseout="this.style.boxShadow='0 0 10px #00ff00'; this.style.transform='scale(1)';"
-          />
+          <img src="https://img.shields.io/badge/Play%20Snake%20Game-Click%20Here-black?style=for-the-badge&logo=github&logoColor=green" width="250" height="70"/>
         </a>
       </td>
     </tr>
