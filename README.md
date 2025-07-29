@@ -54,6 +54,8 @@ print(AboutSwayam())
 
 - 🥅 Using AI/ML to build impactful, deployable tech, not just prototypes
 
+---
+
 <h3 align="left">Programming Languages:</h3>
 <p align="left">
   <a href="https://www.python.org" target="_blank" rel="noreferrer">
