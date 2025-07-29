@@ -54,7 +54,7 @@ print(AboutSwayam())
 
 - 👯 I’m looking to collaborate on [KALI-AI](https://github.com/PseudoSwayam/KALI-AI)
 
-- Intern @ Scalable Systems (Data Science)
+- 📊 Intern @ Scalable Systems (Data Science)
 
 - 📫 How to reach me **swayampr.sahoo@gmail.com**
 
