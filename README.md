@@ -1,53 +1,58 @@
 <!-- PROFILE README START -->
 
-<h1 align="center">Hi 👋, I'm Swayam</h1>
-<h3 align="center">AI/ML & Data Science Developer + Aspiring Consultant Turning Real-Time AI into Real World Impact | Engineer. Analyst. Communicator.</h3>
+<h1 align="center">Hey there! I'm Swayam 👋</h1>
+<h3 align="center">AI/ML & Data Science Engineer | IoT Innovator | Aspiring Consultant</h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/swayamsahoo11/" target="_blank">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" />
   </a>
-  <a href="https://drive.google.com/file/d/1nOQh_gOeOdhg8CWhZM6YYikkTHaQzP0q/view?usp=sharing" target="_blank">
-    <img alt="Resume" src="https://img.shields.io/badge/Resume-View-green?style=for-the-badge&logo=google-drive" />
+  <a href="https://swayamsahoo.netlify.app/" target="_blank">
+    <img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-Visit-9cf?style=for-the-badge&logo=vercel" />
   </a>
-  <a href="mailto:swayampr.sahoo@gmail.com" target="_blank">
+  <a href="mailto:swayampr.sahoo@gmail.com">
     <img alt="Email" src="https://img.shields.io/badge/Email-Say%20Hi!-red?style=for-the-badge&logo=gmail" />
+  </a>
+  <a href="https://drive.google.com/file/d/1nOQh_gOeOdhg8CWhZM6YYikkTHaQzP0q/view?usp=sharing" target="_blank">
+    <img alt="Resume" src="https://img.shields.io/badge/Resume-View-brightgreen?style=for-the-badge&logo=google-drive" />
   </a>
 </p>
 
+---
+
+### 👨‍💻 About Me
+
 ```python
-class AboutMe:
+class AboutSwayam:
     def __init__(self):
-        self.name = ["Swayam"]
-        self.learning = ["AI", "Deep Learning", "IoT", "Fullstack Development"]
-        self.interests = ["Building smart devices", "Real-time AI", "Problem Solving"]
-        self.hobbies = ["Badminton", "Event Management", "Creating innovative projects"]
-        self.goal = "Always be a lifelong learner and build real-world tech "
+        self.role = "AI/ML & Data Science Developer"
+        self.focus = ["Real-Time AI", "IoT", "Edge AI"]
+        self.skills = ["Python", "Deep Learning", "Smart Systems"]
+        self.goal = "Deliver tech that creates real-world impact."
 
-    def say_hi(self):
-        print(f"Hi there 👋, I'm {self.name} and I'm on a journey to innovate and inspire!")
+    def __str__(self):
+        return f"I'm {self.role} focused on {self.focus}. Let's build something amazing!"
 
-me = AboutMe()
-me.say_hi()
+print(AboutSwayam())
 ```
-
-- 🔭 I’m currently working on [Cognitia](https://github.com/PseudoSwayam/Cognitia)
-
-- 🌱 I’m currently learning **SpringBoot**
-
-- 👯 I’m looking to collaborate on [KALI-AI](https://github.com/PseudoSwayam/KALI-AI)
-
-- 👨‍💻 My Portfolio [https://swayamsahoo.netlify.app](https://swayamsahoo.netlify.app)
-
-- 💬 Ask me about **Machine Learning, Data Science**
-
-- 📫 How to reach me **swayampr.sahoo@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://www.hackerrank.com/swayampr_sahoo" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="swayampr_sahoo" height="30" width="40" /></a>
 <a href="https://www.leetcode.com/pseudoswayam" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="pseudoswayam" height="30" width="40" /></a>
 </p>
+
+- 🔭 I’m currently working on [Cognitia](https://github.com/PseudoSwayam/Cognitia)
+
+- 🌱 I’m currently learning **SpringBoot** & **Large Vision Modela**
+
+- 👯 I’m looking to collaborate on [KALI-AI](https://github.com/PseudoSwayam/KALI-AI)
+
+- Intern @ Scalable Systems (Data Science)
+
+- 📫 How to reach me **swayampr.sahoo@gmail.com**
+
+- 🥅 Using AI/ML to build impactful, deployable tech, not just prototypes
 
 <h3 align="left">Programming Languages:</h3>
 <p align="left">
@@ -92,21 +97,21 @@ me.say_hi()
 
 <h3 align="left">Database:</h3>
 <p align="left">
+  <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer">
+    <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/>
+  </a>
   <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
   </a>
   <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/>
   </a>
-  <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer">
-    <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/>
-  </a>
 </p>
 
 <h3 align="left">BigData and Cloud Tools:</h3>
 <p align="left">
   <a href="https://databricks.com/" target="_blank" rel="noreferrer">
-    <img src="https://seeklogo.com/images/D/databricks-logo-50D165D459-seeklogo.com.png" alt="databricks" width="40" height="40"/>
+    <img src="https://svg-repo.com/api/svg/330261/databricks" alt="databricks" width="40" height="40"/>
   </a>
   <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer">
     <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/>
@@ -128,7 +133,7 @@ me.say_hi()
     <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/>
   </a>
   <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/>
+    <img src="https://techicons.dev/icons/flask" alt="flask" width="40" height="40"/>
   </a>
 </p>
 
@@ -154,6 +159,4 @@ me.say_hi()
 - Contribute to Open Source AI projects
 - Never stop exploring new technologies 
 ```
-
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=pseudoswayam&show_icons=true&locale=en&layout=compact" alt="pseudoswayam" /></p>
 
