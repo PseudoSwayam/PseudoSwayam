@@ -85,4 +85,3 @@ print(AboutSwayam())
 - Contribute to Open Source AI projects
 - Never stop exploring new technologies 
 ```
-
