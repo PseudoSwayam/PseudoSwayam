@@ -5,6 +5,7 @@
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=40&pause=1500&color=FFFFFF¢er=true&vCenter=true&width=600&height=100&lines=Hey+there!+I'm+Swayam+%F0%9F%91%8B" alt="Typing SVG" />
   </a>
 </h1>
+<h3 align="center">AI/ML & Data Science Developer + Aspiring Consultant Turning Real-Time AI into Real World Impact | Engineer. Analyst. Communicator.</h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/swayamsahoo11/" target="_blank">
@@ -21,16 +22,18 @@
   </a>
 </p>
 
----
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+</div>
 
-### 👨‍💻 About Me
+## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/> **About Me**
 
 ```python
 class AboutSwayam:
     def __init__(self):
         self.role = "AI/ML & Data Science Developer"
         self.focus = ["Real-Time AI", "IoT", "Edge AI"]
-        self.skills = ["Python", "Deep Learning", "Smart Systems"]
+        self.skills = ["Python", "Deep Learning", "Smart Systems", "Data Lakehousing"]
         self.goal = "Deliver tech that creates real-world impact."
 
     def __str__(self):
@@ -57,7 +60,11 @@ print(AboutSwayam())
 
 - 🥅 Using AI/ML to build impactful, deployable tech, not just prototypes
 
----
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+</div>
+
+## **🛠 Technical Skills**
 
 ### Programming Languages 
 [![My Programming Languages](https://skillicons.dev/icons?i=python,java,typescript,html,css)](https://skillicons.dev)
@@ -74,12 +81,14 @@ print(AboutSwayam())
 ### Fullstack Development Tools 
 [![My FullStack Development Tools](https://skillicons.dev/icons?i=react,spring,tailwindcss,flask)](https://skillicons.dev)
 
-### Others 🛠
+### Others 
 [![My Other Tools](https://skillicons.dev/icons?i=arduino,git,docker)](https://skillicons.dev)
 
----
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+</div>
 
-## 🎯 My Learning Goals Right Now:
+## **🎯 My Learning Goals Right Now:**
 
 ```yaml
 - Expand ML & DL skills
