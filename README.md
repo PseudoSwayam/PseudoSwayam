@@ -56,24 +56,25 @@ print(AboutSwayam())
 
 ---
 
-### Programming Languages
+### Programming Languages 
 [![My Programming Languages](https://skillicons.dev/icons?i=python,java,typescript,html,css)](https://skillicons.dev)
 
-### Artificial Intelligence/Machine Learning
-[![My AI/ML Tools](https://skillicons.dev/icons?i=pytorch,tensorflow,scikitlearn,opencv,pandas,seaborn)](https://skillicons.dev)
+### Artificial Intelligence/Machine Learning 
+[![My AI/ML Tools](https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv)](https://skillicons.dev)
 
-### Databases
-[![My Databases](https://skillicons.dev/icons?i=mssql,mysql,postgresql)](https://skillicons.dev)
+### Databases 
+[![My Databases](https://skillicons.dev/icons?i=mysql,postgresql)](https://skillicons.dev)
 
-### BigData and Cloud Tools
-[![My BigData and Cloud Tools](https://skillicons.dev/icons?i=databricks,azure,firebase)](https://skillicons.dev)
+### BigData and Cloud Tools 
+[![My Cloud Tools](https://skillicons.dev/icons?i=azure,firebase)](https://skillicons.dev)
 
-### Fullstack Development Tools
-[![My FullStack Development Tools](https://skillicons.dev/icons?i=react,spring,tailwind,flask)](https://skillicons.dev)
+### Fullstack Development Tools 
+[![My FullStack Development Tools](https://skillicons.dev/icons?i=react,spring,tailwindcss,flask)](https://skillicons.dev)
 
-### Others
+### Others 🛠
 [![My Other Tools](https://skillicons.dev/icons?i=arduino,git,docker)](https://skillicons.dev)
 
+---
 
 ## 🎯 My Learning Goals Right Now:
 
