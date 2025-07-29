@@ -1,7 +1,10 @@
 <!-- PROFILE README START -->
 
-<h1 align="center">Hey there! I'm Swayam 👋</h1>
-<h3 align="center">AI/ML & Data Science Engineer | IoT Innovator | Aspiring Consultant</h3>
+<h1 align="center">
+  <a href="https://github.com/PseudoSwayam">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=40&pause=1500&color=FFFFFF¢er=true&vCenter=true&width=600&height=100&lines=Hey+there!+I'm+Swayam+%F0%9F%91%8B" alt="Typing SVG" />
+  </a>
+</h1>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/swayamsahoo11/" target="_blank">
