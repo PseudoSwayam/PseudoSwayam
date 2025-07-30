@@ -5,8 +5,10 @@
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=40&pause=1500&color=FFFFFF¢er=true&vCenter=true&width=600&height=100&lines=Hey+there!+I'm+Swayam+%F0%9F%91%8B" alt="Typing SVG" />
   </a>
 </h1>
-<h3 align="center">AI/ML & Data Science Developer + Aspiring Consultant Turning Real-Time AI into Real World Impact //
-Engineer. Analyst. Communicator.</h3>
+<h3 align="center">
+  AI/ML & Data Science Developer + Aspiring Consultant Turning Real-Time AI into Real World Impact<br/>
+  Engineer. Analyst. Communicator.
+</h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/swayamsahoo11/" target="_blank">
