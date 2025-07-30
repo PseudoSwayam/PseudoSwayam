@@ -56,7 +56,7 @@ print(AboutSwayam())
 
 - 📊 Intern @ Scalable Systems (Data Science)
 
-- 📫 How to reach me **swayampr.sahoo@gmail.com**
+- 📫 Reach me at **swayampr.sahoo@gmail.com**
 
 - 🥅 Using AI/ML to build impactful, deployable tech, not just prototypes
 
