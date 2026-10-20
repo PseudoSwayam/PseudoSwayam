@@ -1,5 +1,9 @@
 <!-- PROFILE README START -->
 
+<p align="center">
+  <img src="hero.svg" alt="Swayam Sahoo — AI Systems" width="100%">
+</p>
+
 <h1 align="center">
   <a href="https://github.com/PseudoSwayam">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=40&pause=1500&color=FFFFFF¢er=true&vCenter=true&width=600&height=100&lines=Hey+there!+I'm+Swayam+%F0%9F%91%8B" alt="Typing SVG" />
