@@ -200,47 +200,76 @@ def remove_dashboard_groups(root: ET.Element) -> tuple[int, int]:
 
 
 def add_heading_and_count(root: ET.Element, count: str) -> None:
+    """Create a left-aligned information panel and move the animated city right."""
     view_box = root.attrib.get("viewBox", "0 0 1280 850").replace(",", " ").split()
     try:
         x0, y0, width, height = map(float, view_box)
     except (ValueError, TypeError):
         x0, y0, width, height = 0.0, 0.0, 1280.0, 850.0
 
-    # The supplied city starts around y=150, so title and count fit in the
-    # previously unused upper band without covering the building grid.
+    city = next(
+        (child for child in list(root) if is_city_buildings_group(child)),
+        None,
+    )
+    if city is None:
+        raise ValueError("Could not locate the animated contribution city group.")
+
+    # Keep the contribution city on the right and preserve its child animations.
+    # A group transform changes only the presentation, not the building elements.
+    city.set("transform", "translate(445, 28) scale(0.90)")
+
     title = ET.Element(f"{{{SVG_NS}}}text", {
         "id": "custom-contribution-city-heading",
-        "x": f"{x0 + width / 2:.2f}",
-        "y": f"{y0 + 52:.2f}",
-        "text-anchor": "middle",
-        "fill": PALETTE["foreground"],
+        "x": f"{x0 + 36:.2f}",
+        "y": f"{y0 + 66:.2f}",
+        "text-anchor": "start",
+        "fill": PALETTE["strong"],
         "font-family": "Ubuntu, Helvetica, Arial, sans-serif",
-        "font-size": "34",
+        "font-size": "22",
         "font-weight": "700",
-        "letter-spacing": "2",
+        "letter-spacing": "3",
     })
     title.text = "CONTRIBUTION CITY"
 
     count_node = ET.Element(f"{{{SVG_NS}}}text", {
         "id": "custom-contribution-count",
-        "x": f"{x0 + width / 2:.2f}",
-        "y": f"{y0 + 112:.2f}",
-        "text-anchor": "middle",
-        "fill": PALETTE["strong"],
+        "x": f"{x0 + 34:.2f}",
+        "y": f"{y0 + 145:.2f}",
+        "text-anchor": "start",
+        "fill": PALETTE["foreground"],
         "font-family": "Ubuntu, Helvetica, Arial, sans-serif",
-        "font-size": "46",
+        "font-size": "62",
         "font-weight": "800",
     })
-    count_node.text = f"{count} CONTRIBUTIONS"
+    count_node.text = count
 
-    # Put heading/count after the background/style and before the buildings.
-    children = list(root)
-    city_index = next(
-        (i for i, child in enumerate(children) if is_city_buildings_group(child)),
-        len(children),
-    )
+    subtitle = ET.Element(f"{{{SVG_NS}}}text", {
+        "id": "custom-contribution-subtitle",
+        "x": f"{x0 + 36:.2f}",
+        "y": f"{y0 + 183:.2f}",
+        "text-anchor": "start",
+        "fill": PALETTE["strong"],
+        "font-family": "Ubuntu, Helvetica, Arial, sans-serif",
+        "font-size": "19",
+        "font-weight": "600",
+    })
+    subtitle.text = "contributions in the last year"
+
+    # Strip any border/stroke from the canvas background and ensure it is plain.
+    for child in list(root):
+        if tag_name(child) == "rect" and child.attrib.get("x") == "0" and child.attrib.get("y") == "0":
+            child.set("fill", PALETTE["background"])
+            for attr in ("stroke", "stroke-width", "class"):
+                child.attrib.pop(attr, None)
+            child.attrib.pop("style", None)
+            break
+
+    # Insert text immediately before the city so the city is painted above it only
+    # if they overlap; the intended positions keep the two areas separate.
+    city_index = list(root).index(city)
     root.insert(city_index, title)
     root.insert(city_index + 1, count_node)
+    root.insert(city_index + 2, subtitle)
 
 
 def main() -> int:
@@ -275,7 +304,7 @@ def main() -> int:
     print(f"Contribution count extracted from generated SVG: {count}")
     print(f"Top-level groups before customization: {len(groups)}")
     print("Planned: retain animated building group; remove other dashboard/footer groups.")
-    print("Planned: apply dark teal/cyan palette; add heading and enlarged count.")
+    print("Planned: apply dark teal/cyan palette; left-align title/count/subtitle; move city right; remove canvas border.")
 
     if args.dry_run:
         print("Dry run complete. No files changed.")
