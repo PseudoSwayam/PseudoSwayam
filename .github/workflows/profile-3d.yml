@@ -27,3 +27,9 @@ jobs:
           if git commit -m "generated"; then
             git push
           fi
+        - name: Test contribution city customization
+          run: |
+            python scripts/customize_city.py \
+              --input profile-3d-contrib/profile-custom-city.svg \
+              --output profile-3d-contrib/profile-city.svg \
+              --dry-run
