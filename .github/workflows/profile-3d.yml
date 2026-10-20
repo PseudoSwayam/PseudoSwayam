@@ -12,24 +12,34 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-github-profile-3d-contrib
+
     steps:
       - uses: actions/checkout@v5
+
       - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: .github/profile-settings.json
+
+      - name: Test contribution city customization
+        run: |
+          python scripts/customize_city.py \
+            --input profile-3d-contrib/profile-custom-city.svg \
+            --output profile-3d-contrib/profile-city.svg \
+            --dry-run
+
+      - name: Customize contribution city
+        run: |
+          python scripts/customize_city.py \
+            --input profile-3d-contrib/profile-custom-city.svg \
+            --output profile-3d-contrib/profile-city.svg
+
       - name: Commit & Push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add -A .
-          if git commit -m "generated"; then
+          git add profile-3d-contrib/
+          if git commit -m "generated contribution city"; then
             git push
           fi
-        - name: Test contribution city customization
-          run: |
-            python scripts/customize_city.py \
-              --input profile-3d-contrib/profile-custom-city.svg \
-              --output profile-3d-contrib/profile-city.svg \
-              --dry-run
