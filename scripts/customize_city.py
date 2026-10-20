@@ -216,7 +216,7 @@ def add_heading_and_count(root: ET.Element, count: str) -> None:
 
     # Keep the contribution city on the right and preserve its child animations.
     # A group transform changes only the presentation, not the building elements.
-    city.set("transform", "translate(445, 28) scale(0.90)")
+    city.set("transform", "translate(350, 150) scale(0.62)")
 
     title = ET.Element(f"{{{SVG_NS}}}text", {
         "id": "custom-contribution-city-heading",
@@ -224,8 +224,8 @@ def add_heading_and_count(root: ET.Element, count: str) -> None:
         "y": f"{y0 + 66:.2f}",
         "text-anchor": "start",
         "fill": PALETTE["strong"],
-        "font-family": "Ubuntu, Helvetica, Arial, sans-serif",
-        "font-size": "22",
+        "font-family": "Arial, Helvetica, sans-serif",
+        "font-size": "27",
         "font-weight": "700",
         "letter-spacing": "3",
     })
@@ -237,8 +237,8 @@ def add_heading_and_count(root: ET.Element, count: str) -> None:
         "y": f"{y0 + 145:.2f}",
         "text-anchor": "start",
         "fill": PALETTE["foreground"],
-        "font-family": "Ubuntu, Helvetica, Arial, sans-serif",
-        "font-size": "62",
+        "font-family": "Arial, Helvetica, sans-serif",
+        "font-size": "76",
         "font-weight": "800",
     })
     count_node.text = count
@@ -249,8 +249,8 @@ def add_heading_and_count(root: ET.Element, count: str) -> None:
         "y": f"{y0 + 183:.2f}",
         "text-anchor": "start",
         "fill": PALETTE["strong"],
-        "font-family": "Ubuntu, Helvetica, Arial, sans-serif",
-        "font-size": "19",
+        "font-family": "Arial, Helvetica, sans-serif",
+        "font-size": "23",
         "font-weight": "600",
     })
     subtitle.text = "contributions in the last year"
