@@ -216,7 +216,7 @@ def add_heading_and_count(root: ET.Element, count: str) -> None:
 
     # Keep the contribution city on the right and preserve its child animations.
     # A group transform changes only the presentation, not the building elements.
-    city.set("transform", "translate(350, 150) scale(0.62)")
+    city.set("transform", "translate(220, 220) scale(0.86)")
 
     title = ET.Element(f"{{{SVG_NS}}}text", {
         "id": "custom-contribution-city-heading",
@@ -304,7 +304,7 @@ def main() -> int:
     print(f"Contribution count extracted from generated SVG: {count}")
     print(f"Top-level groups before customization: {len(groups)}")
     print("Planned: retain animated building group; remove other dashboard/footer groups.")
-    print("Planned: apply dark teal/cyan palette; left-align title/count/subtitle; move city right; remove canvas border.")
+    print("Planned: apply dark teal/cyan palette; left-align title/count/subtitle; enlarge and shift city left/down to fill the canvas; remove canvas border.")
 
     if args.dry_run:
         print("Dry run complete. No files changed.")
