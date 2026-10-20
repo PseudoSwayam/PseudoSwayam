@@ -51,7 +51,7 @@ print(AboutSwayam())
 
 <p align="center">
   <img
-    src="./profile-3d-contrib/profile-city.svg"
+    src="https://raw.githubusercontent.com/PseudoSwayam/PseudoSwayam/main/profile-3d-contrib/profile-city.svg"
     alt="Animated GitHub Contribution City"
     width="100%"
   />
