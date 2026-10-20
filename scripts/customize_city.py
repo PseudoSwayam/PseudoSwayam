@@ -199,6 +199,30 @@ def remove_dashboard_groups(root: ET.Element) -> tuple[int, int]:
     return removed_groups, len(city_groups)
 
 
+def improve_building_animations(root: ET.Element) -> int:
+    """Make the existing SVG building-growth animations replay continuously.
+
+    GitHub README images are rendered as external SVG images, so JavaScript
+    scroll observers cannot reliably run inside them. SMIL animation is kept
+    self-contained and loops automatically instead. Existing animation values,
+    durations, and building geometry are preserved.
+    """
+    changed = 0
+    for node in root.iter():
+        if tag_name(node) not in {"animate", "animatetransform", "animatemotion", "set"}:
+            continue
+        # The generator marks the initial build as a one-time animation. Make
+        # those animations replay; do not overwrite any custom indefinite loop.
+        if node.attrib.get("repeatCount", "1") != "indefinite":
+            node.set("repeatCount", "indefinite")
+            changed += 1
+        # Preserve explicit begin timing. If absent, let the animation begin
+        # automatically when the SVG is loaded.
+        if "begin" not in node.attrib:
+            node.set("begin", "0s")
+    return changed
+
+
 def add_heading_and_count(root: ET.Element, count: str) -> None:
     """Create a left-aligned information panel and move the animated city right."""
     view_box = root.attrib.get("viewBox", "0 0 1280 850").replace(",", " ").split()
@@ -216,7 +240,7 @@ def add_heading_and_count(root: ET.Element, count: str) -> None:
 
     # Keep the contribution city on the right and preserve its child animations.
     # A group transform changes only the presentation, not the building elements.
-    city.set("transform", "translate(220, 220) scale(0.86)")
+    city.set("transform", "translate(220, 175) scale(0.86)")
 
     title = ET.Element(f"{{{SVG_NS}}}text", {
         "id": "custom-contribution-city-heading",
@@ -319,6 +343,7 @@ def main() -> int:
     try:
         removed, _ = remove_dashboard_groups(root)
         update_palette(root)
+        animation_count = improve_building_animations(root)
         add_heading_and_count(root, count)
         tree.write(args.output, encoding="utf-8", xml_declaration=True)
     except (ValueError, OSError) as exc:
@@ -335,6 +360,8 @@ def main() -> int:
     print(f"Saved customized SVG: {args.output}")
     print(f"Removed {removed} non-city top-level dashboard/footer group(s).")
     print("Building elements and their existing SVG animation nodes were preserved.")
+    print(f"Updated {animation_count} animation nodes to loop continuously.")
+    print("Note: scroll-triggered animation is not reliable in GitHub README SVG images; this output loops automatically instead.")
     return 0
 
 
